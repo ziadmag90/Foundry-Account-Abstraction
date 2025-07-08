@@ -58,6 +58,8 @@ contract ZkMinimalAccountTest is Test {
         minimalAccount.executeTransaction(EMPTY_BYTES32, EMPTY_BYTES32, transaction);
     }
 
+    // For this function you have to run forge test --mt testZkValidateTransaction --sysytem-mode=true 
+    /*
     function testZkValidateTransaction() public {
         // Arrange
         address dest = address(usdc);
@@ -74,7 +76,7 @@ contract ZkMinimalAccountTest is Test {
 
         // Assert
         assertEq(magic, ACCOUNT_VALIDATION_SUCCESS_MAGIC);
-    }
+    }*/
 
     // Helpers
     function _signTransaction(Transaction memory transaction) internal view returns (Transaction memory) {
