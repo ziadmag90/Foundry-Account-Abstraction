@@ -58,7 +58,7 @@ contract ZkMinimalAccountTest is Test {
         minimalAccount.executeTransaction(EMPTY_BYTES32, EMPTY_BYTES32, transaction);
     }
 
-    // For this function you have to run forge test --mt testZkValidateTransaction --sysytem-mode=true 
+    // For this function you have to run forge test --mt testZkValidateTransaction --sysytem-mode=true
     /*
     function testZkValidateTransaction() public {
         // Arrange
